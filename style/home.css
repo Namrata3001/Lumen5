@@ -1,0 +1,68 @@
+#container1{
+    border: 1px solid black;
+    height:600px;
+    width:70%;
+    display:flex;
+    margin:auto;
+}
+#box1 {
+    border: 1px solid black;
+    height:600px;
+    width:50%;
+
+}
+#box1 > p{
+    font-size: 25px;
+   padding-top: 40px;
+
+}
+
+#box1 > button{
+    color:white;
+    border-radius: 70px;
+    background-color: #5846f5;;
+    font-size:15px;
+    padding:10px 15px 10px 20px;
+    height: 8%;
+    width:120px;
+   display:flex; 
+   margin-top: 60px;
+    
+}
+#box1 > button:hover{
+    background-color:#4656ce;
+    color:white;
+}
+#box2 {
+    border: 1px solid black;
+    height:600px;
+    width:70%;
+
+}
+#box2 > #boxa{
+    border: 1px solid black;
+    height:299px;
+    width:100%;
+
+}
+#box2 > #boxb{
+    border: 1px solid black;
+    height:299px;
+    width:100%;
+
+}
+#box2 > #boxb > img{
+    height: 100%;
+   
+}
+
+/*******************container2***************************/
+#container2{
+    border: 1px solid black;
+    height:600px;
+    width:70%;
+    display:flex;
+    margin:auto;
+
+}
+
