@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Lumen5</title>
+    <link rel="stylesheet" href="./style/login.css" />
+  </head>
+  <body>
+    <div id="container1">
+      <div id="boxa">
+        <img
+          src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png"
+          alt="logo"
+          id="logo"
+        />
+        <div id="header-section">
+            <h1>Supercharge your content strategy</h1>
+            <h2>
+                Join 800,000+ brands creating
+                <br>
+                videos with Lumen5
+            </h2>
+
+        </div>
+        <div id="logo-container">
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png"
+                alt="Customer logo">
+            </div>
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png"
+                alt="Customer logo">
+            </div>
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png"
+                alt="Customer logo">
+            </div>
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png"
+                alt="Customer logo">
+            </div>
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png"
+                alt="Customer logo">
+            </div>
+            <div id="customer-logo-image">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png"
+                alt="Customer logo">
+            </div>
+        </div>
+      </div>
+      <div id="loginbox">
+        <h1>Welcome back!</h1>
+        <form>
+          <fieldset>
+            <label class="labels">WORK EMAIL</label>
+            <input type="email" id="email" />
+            <label class="labels">PASSWORD</label>
+            <input type="password" id="password" />
+            <p>Forgot password?</p>
+            <input type="submit" id="submit" value="Login" />
+          </fieldset>
+        </form>
+        <div id="content-divider">
+            <span> OR</span>
+        </div>
+        <div id="facebook">
+            <span><i class="fa-brands fa-facebook-square"></i>Login with Facebook</span>
+        </div>
+      <div id="sso">
+       <span>Log in via SSO</span>
+            
+        <div id="newAccount">
+           Need a Lumen5 account?<a href="signup.html">Create an account </a>
+        </div>
+        
+        <div id="copyright">
+            <p>2022 Lumen5</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var data = JSON.parse(localStorage.getItem("lumendata")) || [];
+  document.querySelector("form").addEventListener("submit", checkLoginDetails);
+  function checkLoginDetails() {
+    event.preventDefault();
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+
+    var found = false;
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].userEmail == email && data[i].userPassword == password) {
+        found = true;
+        alert("Login Successful !!!");
+        window.location.href = "index.html";
+      }
+    }
+    if (found == false) {
+      alert("Invalid Email or Password");
+    }
+    document.querySelector("#email").value = "";
+    document.querySelector("#password").value = "";
+  }
+  console.log(data);
+</script>

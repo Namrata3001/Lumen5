@@ -1,0 +1,228 @@
+#container1{
+    height:800px;
+    width:100%;
+    display:flex;
+    margin:auto;
+    border:1px solid black;
+
+}
+
+/*------------------------------boxa starts here-----------------------------------*/
+#boxa {
+    
+    height:800px;
+    width: 410px;
+    background-image: url(https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png);
+    background-size:cover;
+    /*flex-direction: column;
+    justify-content: space-between;*/
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0 15px;
+}
+#logo{
+    max-width: 10rem;
+    color:white;
+    padding-left: 40px;
+    padding-top: 20px;
+    
+   } 
+#header-section{
+    color:#fff;
+}
+#header-section > h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin:0 0 30px;
+    line-height:1.2;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+#header-section > h2{
+    margin:0 0 20px;
+    padding-top:10px ;
+    padding-left: 50px;
+    font-size: 30px;
+
+}
+#logo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 40px;
+}
+#customer-logo-image{
+    width:25%;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    display: block;
+}
+#customer-logo-image > img{
+width:100px;
+vertical-align: middle;
+border-style: none;
+box-sizing: border-box;
+}
+
+   /*-------------------------------------------------signupbox starts----------------------------------------------*/
+   #signupbox{
+
+    width: 60%;
+    height: 800px;
+    background-color:white;
+    padding-left: 10px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+   } 
+   #signupbox > h1{
+   font-weight:700;
+   font-size: 37px;
+   margin-bottom: 1rem !important;
+   margin:0 0 20px;
+   font-family: sans-serif;
+   margin-left: 100px;
+   }
+   
+   fieldset{
+    border: none;
+    display: block;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+    
+   }
+   #name{
+    width: 90%;
+    height: 50px;
+    padding-right: 50px;
+    display:inline-block;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    outline: none;
+    /* border: none; */
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+   }
+   #email{
+    width: 90%;
+    height: 50px;
+    padding-right: 50px;
+    display:inline-block;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    outline: none;
+    /* border: none; */
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+   }
+   #password{
+    display:inline-block;
+    width: 90%;
+    height: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    outline: none;
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    }
+
+    .labels{
+        margin: 50px 0px 0px 0px;
+        padding: 0px;
+        color:black;
+       }
+    
+    #create-account{
+        display: block;
+        width: 80%;
+        height: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        background-color: #5846f5;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 100px;
+        text-align: center;
+       
+       }
+    #create-account:hover{
+        background-color:#3824e6;
+       }
+
+    #content-divider{
+        margin:2em 0;
+        color:#7e889a !important;
+        position:relative; 
+        text-align: center;
+        margin-left: 100px;
+     }
+
+     #facebook{
+        margin-left: 100px;
+        background-color:white;
+         color: #3824e6;
+         display: block;
+         width: 80%;
+         height: 40px;
+         padding-right: 20px;
+         padding-left: 20px;
+         padding-top: 10px;
+         border: 1px solid blue;
+         border-radius: 50px;
+         cursor: pointer;
+         font-size: 20px;
+         text-align: center;
+        }
+        #facebook > span{
+            margin-right: 5px;
+        }
+        #login-account{
+        margin-left: 102px;
+        margin-top: 50px;
+        font-size: 18px;
+        color: #24282f;
+        text-align:left;
+       
+        }
+        a{
+            text-decoration:underline;
+            color: #5846f5;
+            font-weight: 600;
+        }
+
+        #copyright{
+            color: #7e889a !important;
+            display: block;
+            align-items:flex-end;
+            margin-bottom: 3rem;
+            white-space: pre-wrap;
+            font-size: 15px;
+            margin-left: 35px;
+            font-family: sans-serif;
+            
+        
+        }
+        #copyright >a{
+           text-decoration: underline;
+           color: #7e889a !important;
+           cursor: pointer;
+           font-size: 15px;
+        }

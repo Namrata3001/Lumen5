@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Lumen5</title>
+    <link rel="stylesheet" href="./style/signup.css" />
+</head>
+<body>
+    <div id="container1">
+        <div id="boxa">
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png"
+            alt="logo"
+            id="logo"
+          />
+          <div id="header-section">
+              <h1>Supercharge your content strategy</h1>
+              <h2>
+                  Join 800,000+ brands creating
+                  <br>
+                  videos with Lumen5
+              </h2>
+  
+          </div>
+          <div id="logo-container">
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png"
+                  alt="Customer logo">
+              </div>
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png"
+                  alt="Customer logo">
+              </div>
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png"
+                  alt="Customer logo">
+              </div>
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png"
+                  alt="Customer logo">
+              </div>
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png"
+                  alt="Customer logo">
+              </div>
+              <div id="customer-logo-image">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png"
+                  alt="Customer logo">
+              </div>
+          </div>
+        </div> 
+        <div id="signupbox">
+            <h1>Get started with a free account</h1>
+            <form>
+              <fieldset>
+                <label class="labels">FULL NAME</label>
+                <input type="name" id="name" />
+                <label class="labels">WORK EMAIL</label>
+                <input type="email" id="email" />
+                <label class="labels">PASSWORD</label>
+                <input type="password" id="password" />
+                
+              </fieldset>
+            </form>
+            <div id="temp">
+                <div id="box1">
+                    <ul>
+                        <li>One lowercase character</li>
+                        <li>One uppercase character</li>
+                    </ul>
+                </div>
+                <div id="box2">
+                    <ul>
+                        <li>8 characters minimum</li>
+                        <li>Contains a number or symbol</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="create-account">
+                  Create Account
+            </div>
+            <div id="content-divider">
+                <span>OR</span>
+            </div>
+            <div id="facebook">
+                <span><i class="fa-brands fa-facebook-square"></i></span>Sign up with Facebook
+            </div>
+            <div id="login-account">
+                Already have a Lumen5 account?<a href="login.html">Log in </a>
+            </div>
+            <div id="copyright">
+                By clicking "Create account" I agree to Lumen5's <a href="/terms/">Terms of Use</a> and <a href ="/privacy/">Privacy Policy</a>.
+            </div>
+        </div>
+        </div>
+</body>
+</html>
+<script>
+    let form=document.querySelector("#form");
+document.querySelector("#form").addEventListener("submit",signupFun);
+var userData=JSON.parse(localStorage.getItem("userCred")) || {};
+function signupFun(e){
+    e.preventDefault();
+    let userObj={
+        name:form.name.value,
+        email:form.email.value,
+        password:form.password.value,
+    };
+   
+    localStorage.setItem("userCred",JSON.stringify(userData));
+
+}
+</script>
