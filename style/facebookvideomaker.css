@@ -139,18 +139,19 @@
     font-size:40px;
     font-weight: 700;
     font-family: sans-serif;
+    padding-bottom: 5%;
 }
 #boxa > h2{
     font-size:30px;
     font-weight: 400;
     font-family: sans-serif;
-    padding-top: 5%;
+    padding-bottom: 5%;
 }
 #boxa >p{
     font-size: 20px;
     font-weight:300 ;
     font-family: sans-serif;
-    padding-top: 5%;
+    padding-bottom: 5%;
     
 }
 #boxa > button{
@@ -176,6 +177,7 @@
     vertical-align:middle;
     box-sizing: border-box;
     margin-left: 50px;
+    padding-bottom: 10%;
 }
 
 /*-----------------------------------------------Container2------------------------------------------*/
@@ -428,4 +430,43 @@ color:#5846f6;
     .blue-box>button:hover {
         background-color: #f0f0f4;
         ;
+    }
+/*------------------------------------------------dropdown----------------------------------------*/
+    .dropdown{
+        position: relative;
+    }
+    
+    .dropdown-content{
+    position: absolute;
+    top: 40px;
+    width: 250px;
+    left:0;
+    background-color: white;
+    color: #24282F;
+    text-decoration: none;
+    display: none;
+    padding: 10px;
+    
+    
+    } 
+    
+    .dropbtn{
+        font-size: 16px;  
+      border: none;
+      outline: none;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .dropdown-content>a{
+    color: #24282F;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    }
+    
+    .show{
+        display: block;
     }
