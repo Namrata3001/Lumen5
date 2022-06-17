@@ -6,6 +6,7 @@ Hello! Everyone, In this blog I am going to have a brief introduction to cloning
 website link -: https://github.com/Namrata3001/Lumen5
 
 netlify link-: https://inquisitive-choux-4f6fc9.netlify.app/
+
 My Agendas : - Breaking the whole website into the smallest divisions according to my strong zone. Technologies used - I have used HTML,CSS and Javascript for back-end .Localstorage is used for the data-storing purpose.
 
 In the landing page where I have tried to build the same page as it is visible on the main website and also added some styles to look better, and  linked the other pages to the home page.
