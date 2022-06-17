@@ -53,7 +53,7 @@
         </div> 
         <div id="signupbox">
             <h1>Get started with a free account</h1>
-            <form>
+            <form id="form">
               <fieldset>
                 <label class="labels">FULL NAME</label>
                 <input type="name" id="name" />
@@ -64,20 +64,7 @@
                 
               </fieldset>
             </form>
-            <div id="temp">
-                <div id="box1">
-                    <ul>
-                        <li>One lowercase character</li>
-                        <li>One uppercase character</li>
-                    </ul>
-                </div>
-                <div id="box2">
-                    <ul>
-                        <li>8 characters minimum</li>
-                        <li>Contains a number or symbol</li>
-                    </ul>
-                </div>
-            </div>
+            
             <div id="create-account">
                   Create Account
             </div>
@@ -97,19 +84,4 @@
         </div>
 </body>
 </html>
-<script>
-    let form=document.querySelector("#form");
-document.querySelector("#form").addEventListener("submit",signupFun);
-var userData=JSON.parse(localStorage.getItem("userCred")) || {};
-function signupFun(e){
-    e.preventDefault();
-    let userObj={
-        name:form.name.value,
-        email:form.email.value,
-        password:form.password.value,
-    };
-   
-    localStorage.setItem("userCred",JSON.stringify(userData));
-
-}
-</script>
+<script src="./scripts/signup.js"></script>
