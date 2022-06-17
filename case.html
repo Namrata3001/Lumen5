@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case Study</title>
     <link rel="stylesheet" href="./style/case.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="navbar">
@@ -18,13 +19,22 @@
         </a>
       </div>
       <div class="navbar-links">
-        <div>Create</div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Create
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="./photovideomaker.html">Photo Video Maker</a>
+            <br>
+            <a href="./facebookvideomaker.html">Facebook Video Maker</a>
+          </div>
+          </div>
         <div>Pricing</div>
         <div>Enterprise</div>
-        <div>Case studies</div>
+        <div > <a href="./case.html">Case studies</a> </div>
         <div>Learn</div>
-        <button>Login</button>
-        <button>Sign up</button>
+        <button><a href="./login.html">Login</a></button>
+        <button><a href="./signup.html">Sign up</a></button>
       </div>
     </div>
 
@@ -122,3 +132,4 @@
     </footer>
   </body>
 </html>
+<script src="./scripts/case.js"></script>
